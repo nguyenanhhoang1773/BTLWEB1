@@ -196,6 +196,13 @@ let songs = [
     src: "../music/song2.mp3",
     url: "https://i.scdn.co/image/ab67616d00001e02209e80eae6638ae3c0623e02",
   },
+  {
+    idSong: 37,
+    name: "FLOWER",
+    singer: "JISOO",
+    src: "../music/song2.mp3",
+    url: "https://i.scdn.co/image/ab67616d00001e025a42123d217f8c248ec1a92d",
+  },
 ];
 window.addEventListener("resize", () => {
   const libraryItemsClient = libraryItems.getBoundingClientRect();
@@ -211,6 +218,12 @@ window.addEventListener("resize", () => {
   barControl.addEventListener("mousedown", handleMousedown);
 });
 const addSong = (songs) => {
+  let amountSong = 15;
+  let amountSong2 = 20;
+  if (window.innerWidth <= 600) {
+    amountSong = 14;
+    amountSong2 = 19;
+  }
   songs.forEach((song, i) => {
     const childEle = document.createElement("li");
     childEle.classList.add("songItem");
@@ -224,11 +237,11 @@ const addSong = (songs) => {
     `;
     if (i < 10) {
       musicItem.appendChild(childEle);
-    } else if (i >= 10 && i < 15) {
+    } else if (i >= 10 && i < amountSong) {
       musicItemPopular.appendChild(childEle);
-    } else if (i >= 15 && i < 20) {
+    } else if (i >= amountSong && i < amountSong2 + 1) {
       musicItemHot.appendChild(childEle);
-    } else {
+    } else if (i >= amountSong2 && i < amountSong2 + 7) {
       musicItemNew.appendChild(childEle);
     }
   });

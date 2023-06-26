@@ -563,7 +563,7 @@
     }
 }
 
-@media (min-width:1300px) and (max-width:1600px)   {
+@media (min-width:1300px) and (max-width:1599px)   {
     .songItem  {
         width: 25%;
 }
@@ -572,7 +572,7 @@
         font-size: 22px;
     }
 }
-@media (min-width:1000px) and (max-width:1300px)   {
+@media (min-width:1000px) and (max-width:1299px)   {
     .songItem  {
         width: 33.33%;
 }
@@ -582,7 +582,7 @@
     }
 }
 
-@media (max-width:1000px) {
+@media (min-width:600px) and  (max-width:999px) {
     .songItem  {
         width: 50%;
 }   
@@ -593,6 +593,99 @@
     .titleSongs  {
         font-size: 20px;
     }
+}
+
+
+@media (max-width:599px) {
+    .sideBar {
+        display: none;
+    }
+    .songItem  {
+        width: 50%;
+}   
+    .footer {
+        padding: 0 14px 0 0;
+    }
+    .footer__row1 {
+        align-items: center;
+    }
+    .footer__infor__col:first-child,.footer__infor__col:last-child {
+        display: none;
+    }
+    .footer__infor__col {
+        margin-left: 0 !important;
+    }
+    .footer__collap {
+        padding: 0;
+    }
+    .footer__row2__item:first-child,.footer__row2__item:last-child {
+        display: none;
+    }
+    .footer__row2__item {
+        font-size: 10px;
+        padding: 0;
+    }
+    .footer__signature  {
+        font-size: 12px;
+    }
+    .footer__row2__list  {
+        margin-left: -10px;
+    }
+    .footer__signature  {
+        padding-right:0 ;
+    }
+    .hideMobile {
+        display: none !important;
+    }
+    #button-header {
+        margin-right: 0 !important;
+    }
+    .nowPlaying__control {
+        padding-right: 20px;
+        flex: 0;
+    }
+    .nowPlaying {
+        padding: 10px;
+    }
+    .footer__row2 {
+        padding: 20px 0 0 0 ;
+    }
+    .nowPlaying__infor__title {
+        overflow: unset;
+        white-space: unset;
+        text-overflow: unset;
+    }
+    header {
+        padding: 0;
+    }
+    .fa-circle-play,.fa-circle-pause {
+        font-size: 34px;
+    }
+    .fa-backward-step,.fa-forward-step {
+        font-size: 20px;
+    }
+    .mobileBtn {
+        background-color: #fff !important;
+        color: #000 !important;
+        margin-right: 14px  !important;
+    }
+    header > #first-header > #title {
+        padding: 4px 16px !important;
+    }
+    #title {
+        font-size: 25px !important;
+    }
+    main {
+        padding: 0 0px 20px 20px !important;
+    }
+    .titleSongs  {
+        font-size: 26px !important;
+    }
+    .nowPlaying__infor__icon  {
+        font-size: 24px;
+        margin-left: 24px;
+    }
+    
 }
 
 @media (max-width:1200px) {

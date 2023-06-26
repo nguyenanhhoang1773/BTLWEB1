@@ -314,7 +314,7 @@ window.addEventListener("load", function () {
   addSongLibrary(songs);
   setTimeout(() => {
     loading.classList.add("hidden");
-  }, 100);
+  }, 500);
   const libraryItemsClient = libraryItems.getBoundingClientRect();
   const nowPlayingClient = nowPlaying.getBoundingClientRect();
   const mainClient = main.getBoundingClientRect();

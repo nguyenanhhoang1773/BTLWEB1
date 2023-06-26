@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #000;
+}
+
+
+header {
+  padding: 11px;
+}
+
+header > #first-header {
+  background-color: #000;
+}
+header > #first-header,
+#second-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1.5px solid #000;
+}
+
+
+header > #first-header > #image-header {
+  display: flex;
+  margin-left: 60px;
+  width: 20%;
+}
+
+header img {
+  margin: 4px 15px;
+}
+
+header > #first-header > #title {
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  text-transform: uppercase;
+  width: 100%;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+header > #first-header > #button-header {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 60px;
+}
+
+header #button-header > button {
+  text-transform: uppercase;
+  padding: 12px 14px;
+  margin: 4px 8px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+header #button-header > button:first-of-type {
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid rgba(0,0,0,0.8);
+}
+
+header #button-header > button:last-of-type {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color:rgba(0,0,0,0.8) ;
+  color: rgb(255, 255, 255);
+}
+
+header #button-header > button:first-of-type:hover,button:last-of-type:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+header #second-header a {
+  text-transform: uppercase;
+  color:rgb(197, 196, 196) ;
+  text-decoration: none;
+  margin: auto 15px;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+main {
+  border-radius: 8px;
+  padding: 52px 0 20px 20px  ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  border-radius: 8px;
+}
+.wrapper--main {
+  padding: 14px 0;
+  border-radius: 8px;
+  background-color: #121212;
+ 
+}
+.list-albumn {
+  background-color: #121212;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.list-albumn > .frame-select {
+  /* width: 100%; */
+}
+
+.list-albumn .title-box {
+  margin-bottom: 6px;
+  background-color: #121212;
+}
+
+.list-albumn li a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+    margin-bottom: 6px;
+}
+.list-albumn h2 a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.list-albumn ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.list-albumn ul > li {
+  display: inline-block;
+  padding: 0 20px 20px 0;
+  border-radius: 14px;
+}
+
+
+.list-albumn a > img {
+  width: 100%;
+  border-radius: 6px;
+  filter: grayscale(10%);
+  object-fit: cover;
+  transition: all ease 0.2s;
+}
+.list-albumn a > img:hover {
+  transform: scale(1.015);
+  filter: grayscale(0);
+}
+ul > li > .info-albumn {
+  margin-top: 5px;
+  overflow: hidden;
+  height: 38px;
+}
+
+.info-albumn h3 {
+  margin-left: 6px;
+  font-family: "NhacCuaTui", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  color: #dbd8d8;
+  text-transform: capitalize;
+}
